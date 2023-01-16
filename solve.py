@@ -71,12 +71,12 @@ def postf(string):
 def main():
     with open('input.txt', 'r') as in_file:
         for line in in_file.read().splitlines():
-            if line.startswith("in:"):
-                print(inf(line.replace("in:",'')))
-            elif line.startswith("pre:"):
-                print(pref(line.replace("pre:",'')))
-            elif line.startswith("post:"):
-                print(postf(line.replace("post:",'')))
+            if line.startswith("solve_in:"):
+                print(inf(line.replace("solve_in:",'')))
+            elif line.startswith("solve_pre:"):
+                print(pref(line.replace("solve_pre:",'')))
+            elif line.startswith("solve_post:"):
+                print(postf(line.replace("solve_post:",'')))
 
 if __name__ == '__main__':
     main()
